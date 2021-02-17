@@ -5,7 +5,7 @@ import "../../utilities.css";
 import "./Skeleton.css";
 
 //TODO: REPLACE WITH YOUR OWN CLIENT_ID
-const GOOGLE_CLIENT_ID = "121479668229-t5j82jrbi9oejh7c8avada226s75bopn.apps.googleusercontent.com";
+const GOOGLE_CLIENT_ID = "72899336268-cki470t9qeqoi8paobaeatpsnog9f7kk.apps.googleusercontent.com";
 
 class LoginButton extends Component {
   constructor(props) {
