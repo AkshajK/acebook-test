@@ -88,3 +88,50 @@ form {
 .u-link:hover {
   color: var(--primary--dim);
 }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+.center-horiz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
+.newpost {
+  width: 40%;
+  font-size: 20px;
+}
+.height40px {
+  height: 40px;
+}
+.fullheight {
+  height: 100%;
+}
+.blue {
+  color: #429bf5;
+  font-weight: 900
+}
+.message {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.scroll {
+  max-height: 600px;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+.stylebutton {
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #61a8ef
+}

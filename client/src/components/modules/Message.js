@@ -9,8 +9,8 @@ class Message extends Component {
 
   render() {
     return (
-      <div>
-        <b>{this.props.name + ": "}</b>
+      <div className="message">
+        <span className="blue">{this.props.name + ": "}</span>
         {this.props.content}
       </div>
     );

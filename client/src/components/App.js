@@ -52,18 +52,25 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div className="center">
         <LoginButton
           handleLogin={this.handleLogin}
           handleLogout={this.handleLogout}
           userId={this.state.userId} 
         />
-        <h1>Welcome to AceBook!</h1>
+        <h1 className="blue">Welcome to AceBook!</h1>
+        {
+          !this.state.userId ? "You are not logged in" : 
+          <>
         <NewMessage loggedIn={this.state.userId} />
-        {this.state.messages.map((message) => (
+        <div className="scroll">
+        {this.state.messages.reverse().map((message) => (
           <Message name={message.name} content={message.content} />
         ))}
-      </>
+        </div>
+        </>
+        }
+      </div>
     );
   }
 }

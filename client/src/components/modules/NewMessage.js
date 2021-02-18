@@ -13,22 +13,23 @@ class NewMessage extends Component {
   render() {
    
     return (
-      <>
+      <div className="center-horiz height40px">
         <input type="text" value={this.state.content} 
         onChange={(event) => {
           this.setState({content: event.target.value})
-        }} />
-        <button onClick={() => {
+        }} className="newpost fullheight" />
+        <button className="fullheight stylebutton" onClick={() => {
           if(!this.props.loggedIn) {
             console.log("Not logged in");
             return;
           }
           post("/api/newmessage", {content: this.state.content});
           this.setState({content: ""})
+          window.location.reload();
         }}>
           Post
         </button>
-      </>
+      </div>
     );
   }
 }
