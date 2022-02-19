@@ -30,10 +30,11 @@ const auth = require("./auth");
 
 // socket stuff
 const socketManager = require("./server-socket");
-require('dotenv').config();
+require("dotenv").config();
 // Server configuration below
 // TODO change connection URL after setting up your team database
-const mongoConnectionURL = "mongodb+srv://admin:blueprint@cluster0.mb9xe.mongodb.net/test?retryWrites=true&w=majority";
+const mongoConnectionURL =
+  "mongodb+srv://admin:JpPDlpxVOMEu24GK@cluster0.mb9xe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 // TODO change database name to the name you chose
 const databaseName = "test";
 
